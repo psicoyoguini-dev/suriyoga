@@ -20,6 +20,17 @@
       --gris: #3f3f3f;
       --verde-oscuro: #2f3e46;
     }
+    .site-header {
+  padding: 30px 20px 10px;
+  text-align: center;
+}
+
+.logo {
+  width: 140px;
+  max-width: 70%;
+  height: auto;
+}
+
 
     * {
       box-sizing: border-box;
@@ -37,10 +48,10 @@
       line-height: 1.7;
     }
 
-    header {
-      padding: 20px;
-      text-align: center;
-    }
+   <header class="site-header">
+  <img src="img/logo-suri.png" alt="Suri Yoga" class="logo">
+</header>
+
 
     header h1 {
       margin: 0;
@@ -75,16 +86,18 @@
     }
 
     /* HERO */
-    .hero {
-      text-align: center;
-      padding: 90px 20px;
-      background: linear-gradient(180deg, #ffffff, var(--arena));
-    }
-
-    .hero p {
-      max-width: 700px;
-      margin: auto;
-    }
+  .hero {
+  text-align: center;
+  padding: 110px 20px;
+  background-image:
+    linear-gradient(
+      rgba(248, 245, 240, 0.85),
+      rgba(248, 245, 240, 0.9)
+    ),
+    url("img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
     .claim {
       font-size: 1.3rem;
@@ -124,3 +137,4 @@
       padding: 60px 30px;
       border-radius: 20px;
       text-align
+
