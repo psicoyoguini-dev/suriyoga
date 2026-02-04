@@ -79,8 +79,8 @@
       padding: 110px 20px;
       background-image:
         linear-gradient(
-          rgba(248, 245, 240, 0.85),
-          rgba(248, 245, 240, 0.9)
+          rgba(248, 245, 240, 0.65),
+          rgba(248, 245, 240, 0.7)
         ),
         url("img/hero.jpg");
       background-size: cover;
@@ -141,6 +141,36 @@
       font-size: 0.9rem;
       color: #666;
     }
+    .about {
+  padding: 80px 20px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-photo img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-photo img {
+    max-width: 280px;
+    margin: auto;
+  }
+}
   </style>
 </head>
 
@@ -216,6 +246,29 @@
   </div>
 </section>
 
+  <section class="about">
+  <div class="about-grid">
+    <div class="about-photo">
+      <img src="img/candela.jpg" alt="Candela – Suri Yoga">
+    </div>
+
+    <div class="about-text">
+      <h2>Quién acompaña</h2>
+      <p>
+        Soy Candela, psicóloga, docente y maestra de yoga y mindfulness infantil.
+      </p>
+      <p>
+        Durante más de 15 años trabajé como docente de tecnología,
+        acompañando a niños y adolescentes en entornos digitales.
+      </p>
+      <p>
+        Desde esa experiencia nace Suri Yoga: un espacio a favor del equilibrio,
+        la presencia y el cuerpo, en un tiempo de sobreestimulación constante.
+      </p>
+    </div>
+  </div>
+</section>
+
 <section class="highlight" id="contacto">
   <h2>Contacto</h2>
   <a href="https://wa.me/5491155131360" class="btn">Escribirme por WhatsApp</a>
@@ -227,4 +280,5 @@
 
 </body>
 </html>
+
 
