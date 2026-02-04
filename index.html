@@ -171,15 +171,32 @@
     margin: auto;
   }
 }
+    .logo-wrap {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f5f0; /* arena */
+  padding: 18px;
+  border-radius: 50%;
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  display: block;
+}
   </style>
 </head>
 
 <body>
-
 <header>
-  <img src="img/logo-suri.png" alt="Suri Yoga" class="logo">
+  <div class="logo-wrap">
+    <img src="img/logo-suri.png" alt="Suri Yoga" class="logo">
+  </div>
 </header>
-
 <section class="hero">
   <p class="claim"><strong>Habitar el cuerpo. Enseñar presencia.</strong></p>
   <p>
@@ -188,13 +205,11 @@
   </p>
   <a href="#contacto" class="btn">Quiero más información</a>
 </section>
-
 <section>
   <h2>El contexto actual</h2>
   <p>Niños y adolescentes viven hoy en un entorno de hiperestimulación constante.</p>
   <p>Cuando el cuerpo no tiene lugar, la atención se fragmenta.</p>
 </section>
-
 <section>
   <h2>¿Qué es Suri Yoga?</h2>
   <div class="grid">
@@ -212,10 +227,8 @@
     </div>
   </div>
 </section>
-
   <section>
   <h2>Programas</h2>
-
   <div class="grid">
     <div class="box">
       <h3>Raíz · Infancias</h3>
@@ -245,7 +258,6 @@
     </div>
   </div>
 </section>
-
   <section class="about">
   <div class="about-grid">
     <div class="about-photo">
@@ -280,6 +292,7 @@
 
 </body>
 </html>
+
 
 
 
