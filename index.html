@@ -4,10 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Suri Yoga | Habitar el cuerpo</title>
-  <meta name="description" content="Yoga y mindfulness infantil y adolescente en Pilar." />
+  <meta name="description" content="Yoga y mindfulness infantil y adolescente en Pilar. Espacio sin pantallas." />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --arena: #f8f5f0;
@@ -19,22 +22,34 @@
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body { margin:0; font-family:'Inter', sans-serif; background-color:var(--arena); color:var(--gris); line-height:1.7; }
+    
     header { text-align:center; padding:30px 20px 10px; }
     .logo { width:260px; max-width:80%; height:auto; }
+
     section { padding:70px 20px; max-width:1000px; margin:auto; }
     h1,h2,h3 { font-family:'Playfair Display', serif; color:var(--verde-oscuro); font-weight:500; }
     h2 { font-size:2rem; margin-bottom:20px; }
     h3 { font-size:1.3rem; }
     p { font-size:1.05rem; }
+
     .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:40px; }
     .box { background-color:#fff; padding:30px; border-radius:18px; box-shadow:0 10px 25px rgba(0,0,0,0.04); }
+
     .highlight { background-color:var(--salvia); color:#fff; padding:60px 30px; border-radius:20px; text-align:center; }
     .highlight h2 { color:#fff; }
+
     footer { text-align:center; padding:40px 20px; font-size:0.9rem; color:#666; }
+
     nav { position:fixed; top:0; left:0; width:100%; background-color:var(--arena); z-index:999; box-shadow:0 2px 10px rgba(0,0,0,0.05); }
     nav div { max-width:1000px; margin:auto; display:flex; justify-content:space-around; align-items:center; padding:15px 10px; }
     nav a { text-decoration:none; color:var(--verde-oscuro); font-weight:500; }
+
     .spacer { height:70px; }
+
+    /* BIO */
+    .about { display:flex; flex-wrap:wrap; gap:30px; margin-bottom:40px; align-items:center; }
+    .about img { border-radius:18px; max-width:300px; width:100%; }
+    .about-text { flex:1; min-width:250px; }
   </style>
 </head>
 <body>
@@ -52,6 +67,16 @@
   </div>
 </nav>
 <div class="spacer"></div>
+
+<!-- BIO -->
+<section class="about">
+  <img src="img/candela.jpg" alt="Candela – Suri Yoga">
+  <div class="about-text">
+    <h2>Quién acompaña</h2>
+    <p>Soy Candela, psicóloga clínica, docente y maestra de yoga y mindfulness infantil, con más de 15 años de experiencia en contextos educativos y terapéuticos.</p>
+    <p>Suri Yoga nace en el cruce entre educación, cuerpo y mundo emocional, con mirada respetuosa de los encuadres institucionales.</p>
+  </div>
+</section>
 
 <!-- SECCIONES PRINCIPALES -->
 
@@ -113,7 +138,9 @@
 
 <section id="semilla">
   <h2>Semilla · Baby Yoga</h2>
-  <p>Próximamente: Estamos preparando la primera germinación de nuestra semilla.</p>
+  <p style="text-align:center; font-style:italic;">
+    Próximamente: estamos preparando con mimo la primera germinación de nuestra semilla.
+  </p>
   <div class="grid">
     <div class="box">
       <h3>Árbol (abuelos/as + bebés 6m-2a)</h3>
@@ -124,7 +151,9 @@
       <p>COMPLETAR VALORES</p>
     </div>
   </div>
-  <p style="text-align:center; font-style:italic;">Déjanos tu contacto y te avisaremos cuando la primera semilla termine de germinar.</p>
+  <p style="text-align:center; font-style:italic;">
+    Déjanos tu contacto y te avisaremos cuando la primera semilla termine de germinar.
+  </p>
 </section>
 
 <footer>
