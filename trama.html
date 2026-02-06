@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Suri Yoga | Trama · Instituciones</title>
+  <title>Suri Yoga | Trama Institucional</title>
+  <meta name="description" content="Programa institucional de regulación emocional y atención plena para infancias y adolescencias." />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,63 +15,178 @@
     :root {
       --arena: #f8f5f0;
       --salvia: #9caf88;
+      --arcilla: #cfa58d;
       --gris: #3f3f3f;
       --verde-oscuro: #2f3e46;
     }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; font-family:'Inter',sans-serif; background-color: var(--arena); color: var(--gris); line-height:1.7; }
-    header { padding:30px 20px 10px; text-align:center; }
-    .logo { width:260px; max-width:80%; height:auto; }
-    section { padding:70px 20px; max-width:1000px; margin:auto; }
-    h1,h2,h3 { font-family:'Playfair Display',serif; color: var(--verde-oscuro); font-weight:500; }
-    h2 { font-size:2rem; margin-bottom:20px; }
-    h3 { font-size:1.3rem; }
-    p { font-size:1.05rem; }
-    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:40px; }
-    .box { background-color:#fff; padding:30px; border-radius:18px; box-shadow:0 10px 25px rgba(0,0,0,0.04); }
-    .btn { display:inline-block; margin-top:20px; padding:14px 34px; background-color: var(--verde-oscuro); color:#fff; text-decoration:none; border-radius:40px; font-size:1rem; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--arena);
+      color: var(--gris);
+      line-height: 1.7;
+    }
+    header { padding: 40px 20px 10px; text-align: center; }
+    .logo { width: 260px; max-width: 80%; height: auto; }
+
+    section { padding: 70px 20px; max-width: 1000px; margin: auto; }
+    h1,h2,h3 { font-family: 'Playfair Display', serif; color: var(--verde-oscuro); font-weight: 500; }
+    h1 { font-size: 2.5rem; margin-bottom: 10px; text-align:center; }
+    h2 { font-size: 2rem; margin-bottom: 20px; }
+    h3 { font-size: 1.3rem; }
+    p { font-size: 1.05rem; }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px;
+      background-image:
+        linear-gradient(rgba(248,245,240,0.5), rgba(248,245,240,0.6)),
+        url("img/hero.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    .hero p { max-width: 680px; margin: auto; }
+    .claim { font-size: 1.3rem; margin: 20px 0; color: var(--verde-oscuro); }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 40px; margin-top:30px; }
+    .box { background-color: #ffffff; padding: 30px; border-radius: 18px; box-shadow: 0 10px 25px rgba(0,0,0,0.04); }
+    .box h3 { margin-bottom: 15px; }
+    .btn { display: inline-block; margin-top: 30px; padding: 14px 34px; background-color: var(--verde-oscuro); color: #fff; text-decoration: none; border-radius: 40px; font-size:1rem; }
+
     footer { text-align:center; padding:40px 20px; font-size:0.9rem; color:#666; }
+
+    .highlight { background-color: var(--salvia); color: #fff; padding: 60px 30px; border-radius: 20px; text-align:center; }
+    .highlight h2 { color:#fff; }
   </style>
 </head>
 
 <body>
-<header>
-  <div class="logo-wrap">
+  <header>
     <img src="img/logo-suri.png" alt="Suri Yoga" class="logo">
-  </div>
-</header>
+  </header>
 
-<section>
-  <h2>Trama · Instituciones</h2>
-  <p>Programas de regulación corporal y emocional para escuelas y espacios educativos, adaptados según edad y modalidad.</p>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>SURI YOGA</h1>
+    <p class="claim"><strong>Programa institucional de regulación emocional y atención plena</strong></p>
+    <p>Para infancias y adolescencias<br><em>Bienestar emocional · Presencia corporal · Convivencia escolar</em></p>
+    <a href="#contacto" class="btn">Quiero más información</a>
+  </section>
 
-  <div class="grid">
-    <div class="box">
-      <h3>Nivel Inicial</h3>
-      <p>Modalidad: Talleres puntuales / Programas periódicos / Propuestas personalizadas</p>
-      <p>Valores: COMPLETAR</p>
+  <!-- Presentación general -->
+  <section>
+    <h2>Presentación general</h2>
+    <p>
+      Suri Yoga es un programa de yoga y mindfulness orientado a infancias y adolescencias,
+      diseñado para acompañar procesos de <strong>autorregulación emocional, corporal y atencional</strong>
+      en contextos educativos. La propuesta ofrece <strong>espacios estructurados de pausa, presencia y experiencia corporal</strong>,
+      que favorecen mejores condiciones para el aprendizaje, la convivencia y el bienestar general de la comunidad educativa.
+    </p>
+    <p>
+      Suri Yoga se integra a la dinámica institucional, respetando tiempos, encuadres y proyectos pedagógicos existentes.
+    </p>
+  </section>
+
+  <!-- Fundamentos -->
+  <section>
+    <h2>Fundamentos</h2>
+    <p>
+      Las infancias y adolescencias actuales se desarrollan en contextos de <strong>alta estimulación, fuerte presencia de pantallas y escasos espacios de pausa corporal consciente</strong>.
+      Estas condiciones impactan directamente en la atención, la regulación emocional y el clima grupal dentro de las instituciones.
+    </p>
+    <ul>
+      <li>Registro del propio cuerpo</li>
+      <li>Pausa consciente en comunidad</li>
+      <li>Regulación emocional</li>
+      <li>Mayor disponibilidad para el aprendizaje</li>
+    </ul>
+    <p>El cuerpo es abordado como <strong>vía pedagógica</strong>, favoreciendo procesos de presencia y conexión consigo y con otros.</p>
+  </section>
+
+  <!-- Para qué Suri Yoga -->
+  <section>
+    <h2>¿Para qué Suri Yoga en la institución?</h2>
+    <ul>
+      <li>Mayor capacidad de atención y concentración</li>
+      <li>Mejora en la autorregulación emocional</li>
+      <li>Fortalecimiento del clima grupal y la convivencia</li>
+      <li>Disminución de la sobrecarga atencional</li>
+      <li>Espacios compartidos de pausa dentro de la jornada escolar</li>
+    </ul>
+    <p>Suri Yoga acompaña a la institución en la construcción de un <strong>lenguaje común de presencia</strong>, transferible al aula y a la vida cotidiana escolar.</p>
+  </section>
+
+  <!-- Propuesta de trabajo -->
+  <section>
+    <h2>Nuestra propuesta de trabajo</h2>
+    <p>
+      Suri Yoga se articula con los equipos institucionales, entendiendo que <strong>nadie conoce mejor a la comunidad que quienes la habitan diariamente</strong>.
+    </p>
+    <ul>
+      <li>No reemplaza prácticas existentes</li>
+      <li>No exige trabajo extra a los equipos</li>
+      <li>No abre procesos que la institución no pueda sostener</li>
+    </ul>
+    <p>Por el contrario, <strong>potencia recursos ya presentes</strong>, aportando herramientas corporales y atencionales aplicables en el día a día escolar.</p>
+  </section>
+
+  <!-- Ajustes por nivel -->
+  <section>
+    <h2>Ajustes según nivel educativo</h2>
+
+    <div class="grid">
+      <!-- Nivel Inicial -->
+      <div class="box">
+        <h3>🔹 Nivel Inicial</h3>
+        <ul>
+          <li>Reconocimiento del cuerpo</li>
+          <li>Regulación emocional temprana</li>
+          <li>Atención a través del juego y el movimiento</li>
+          <li>Construcción de rutinas de pausa y calma</li>
+        </ul>
+      </div>
+
+      <!-- Nivel Primario -->
+      <div class="box">
+        <h3>🔹 Nivel Primario</h3>
+        <ul>
+          <li>Desarrollo de la atención sostenida</li>
+          <li>Registro emocional</li>
+          <li>Convivencia y trabajo grupal</li>
+          <li>Relación cuerpo–aprendizaje</li>
+        </ul>
+      </div>
+
+      <!-- Nivel Secundario -->
+      <div class="box">
+        <h3>🔹 Nivel Secundario</h3>
+        <ul>
+          <li>Registro corporal en etapa de cambios</li>
+          <li>Gestión emocional</li>
+          <li>Reducción de la sobrecarga atencional</li>
+          <li>Espacios de pausa y escucha sin exigencia</li>
+        </ul>
+      </div>
     </div>
-    <div class="box">
-      <h3>Nivel Primario</h3>
-      <p>Modalidad: Talleres puntuales / Programas periódicos / Propuestas personalizadas</p>
-      <p>Valores: COMPLETAR</p>
-    </div>
-    <div class="box">
-      <h3>Nivel Secundario</h3>
-      <p>Modalidad: Talleres puntuales / Programas periódicos / Propuestas personalizadas</p>
-      <p>Valores: COMPLETAR</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="highlight" id="contacto">
-  <h2>Contacto</h2>
-  <a href="https://wa.me/5491155131360" class="btn">Escribirme por WhatsApp</a>
-</section>
+  <!-- Modalidades -->
+  <section>
+    <h2>Modalidades de implementación</h2>
+    <div class="grid">
+      <div class="box"><h3>Talleres puntuales</h3><p>Jornadas institucionales, semanas especiales, aperturas o cierres de ciclo lectivo.</p></div>
+      <div class="box"><h3>Programas periódicos</h3><p>Propuestas mensuales o trimestrales, con encuentros semanales o quincenales, orientadas a generar impacto sostenido.</p></div>
+      <div class="box"><h3>Propuestas personalizadas</h3><p>Diseñadas junto al equipo directivo según necesidades específicas de la institución, niveles y tiempos disponibles.</p></div>
+    </div>
+  </section>
 
-<footer>
-  <p>Suri Yoga · Del Viso – Pilar</p>
-</footer>
-</body>
-</html>
+  <!-- Impacto institucional -->
+  <section>
+    <h2>Impacto institucional esperado</h2>
+    <ul>
+      <li>Mayor disponibilidad emocional y corporal para el aprendizaje</li>
+      <li>Mejora del clima institucional</li>
+      <li>Espacios de pausa compartida en la jornada escolar</li>
+      <li>Acompañamiento a equipos en con
