@@ -5,12 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Suri Yoga | Habitar el cuerpo</title>
   <meta name="description" content="Yoga y mindfulness infantil y adolescente en Pilar. Espacio sin pantallas." />
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
-
   <style>
     :root {
       --arena: #f8f5f0;
@@ -19,9 +16,12 @@
       --gris: #3f3f3f;
       --verde-oscuro: #2f3e46;
     }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -29,17 +29,17 @@
       color: var(--gris);
       line-height: 1.7;
     }
-
     nav {
       position: fixed;
-      top: 0; left: 0; width: 100%;
-      background-color: #faf7f2;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--arena);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
       z-index: 1000;
       font-weight: 500;
       font-family: 'Inter', sans-serif;
     }
-
     nav div {
       max-width: 1000px;
       margin: auto;
@@ -48,167 +48,102 @@
       gap: 40px;
       padding: 15px 10px;
     }
-
     nav a {
       text-decoration: none;
       color: var(--verde-oscuro);
       font-size: 1rem;
-      padding: 4px 8px;
+      padding: 6px 10px;
       border-radius: 8px;
       transition: background-color 0.3s ease, color 0.3s ease;
     }
-
     nav a:hover,
     nav a:focus {
       background-color: var(--salvia);
       color: white;
       outline: none;
     }
-
-    header {
-      margin-top: 70px;
-      position: relative;
-      height: 320px;
-      background-image: url('img/hero.jpg');
-      background-size: cover;
-      background-position: center center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
+    .spacer {
+      height: 65px; /* Altura nav para compensar */
     }
-
-    header::before {
-      content: "";
-      position: absolute;
-      top:0; left:0; right:0; bottom:0;
-      background: rgba(0,0,0,0.35);
-      z-index: 0;
+    header.hero {
+      width: 100%;
+      max-height: 360px;
+      overflow: hidden;
     }
-
-    .logo {
-      max-width: 180px;
+    header.hero img {
       width: 100%;
       height: auto;
-      z-index: 1;
-      margin-bottom: 12px;
-      filter: drop-shadow(0 0 3px rgba(0,0,0,0.6));
+      display: block;
+      object-fit: cover;
+      max-height: 360px;
     }
-
-    .slogan {
-      font-family: 'Playfair Display', serif;
-      font-weight: 600;
-      font-size: 1.4rem;
-      margin: 0;
-      z-index: 1;
-      text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    header.logo {
+      text-align: center;
+      margin: 40px 0 40px;
     }
-
-    main {
+    header.logo img {
+      max-width: 220px;
+      width: 80%;
+      height: auto;
+      display: inline-block;
+    }
+    section {
       max-width: 900px;
       margin: auto;
-      padding: 40px 20px 60px;
-      background-color: var(--arena);
-      color: var(--gris);
+      padding: 0 20px 60px;
     }
-
     h2 {
       font-family: 'Playfair Display', serif;
-      font-weight: 500;
       color: var(--verde-oscuro);
+      font-weight: 500;
       font-size: 2rem;
       margin-bottom: 20px;
     }
-
     p {
       font-size: 1.05rem;
-      margin-bottom: 1.2em;
+      margin-bottom: 20px;
     }
-
-    section {
-      margin-bottom: 60px;
-    }
-
-    /* Imagen en sección quien acompaña */
-    #quien-acompana img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 16px;
-      margin-top: 15px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
-
     footer {
       text-align: center;
       padding: 30px 10px;
       font-size: 0.9rem;
       color: #666;
-      border-top: 1px solid #ddd;
-      margin-top: 40px;
       background-color: var(--arena);
-    }
-
-    @media (max-width: 500px) {
-      nav div {
-        gap: 20px;
-        padding: 12px 6px;
-      }
-
-      .logo {
-        max-width: 140px;
-      }
-
-      .slogan {
-        font-size: 1.2rem;
-      }
-
-      header {
-        height: 260px;
-      }
+      border-top: 1px solid #ddd;
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <div>
-      <a href="#contexto">Contexto</a>
-      <a href="programas.html">Programas</a>
-      <a href="#quien-acompana">Quién acompaña</a>
-      <a href="#contacto">Contacto</a>
-    </div>
-  </nav>
+<nav>
+  <div>
+    <a href="index.html">Contexto</a>
+    <a href="programas.html">Programas</a>
+    <a href="quien-acompana.html">Quién acompaña</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+</nav>
+<div class="spacer"></div>
 
-  <header>
-    <img src="img/logo-suri.png" alt="Suri Yoga" class="logo" />
-    <p class="slogan">Habitar el cuerpo · Acompañar emociones</p>
-  </header>
+<header class="hero">
+  <img src="img/hero.jpg" alt="Suri Yoga - Habitar el cuerpo y acompañar emociones" />
+</header>
 
-  <main>
-    <section id="contexto">
-      <h2>Contexto actual</h2>
-      <p>
-        Suri Yoga es un programa de yoga y mindfulness orientado a infancias y adolescencias, diseñado para acompañar procesos de autorregulación emocional, corporal y atencional en contextos educativos.
-      </p>
-      <p>
-        Vivimos en entornos de alta estimulación y fuerte presencia de pantallas, con escasos espacios de pausa corporal consciente.
-      </p>
-    </section>
+<header class="logo">
+  <img src="img/logo-suri.png" alt="Suri Yoga Logo" />
+</header>
 
-    <section id="quien-acompana">
-      <h2>Quién acompaña</h2>
-      <p>
-        Lic. Candela María Franchi – Psicóloga clínica, docente y Maestra de Yoga & Mindfulness infantil, con más de 15 años de experiencia en contextos educativos y terapéuticos.
-      </p>
-      <p>
-        Suri Yoga nace en el cruce entre educación, cuerpo y mundo emocional, con una mirada realista y respetuosa de los encuadres institucionales.
-      </p>
-      <img src="img/candela-franchi.jpg" alt="Candela María Franchi" />
-    </section>
+<section>
+  <h2>Contexto actual</h2>
+  <p>Suri Yoga es un programa de yoga y mindfulness orientado a infancias y adolescencias, diseñado para acompañar procesos de autorregulación emocional, corporal y atencional en contextos educativos.</p>
+  <p>Vivimos en entornos de alta estimulación y fuerte presencia de pantallas, con escasos espacios de pausa corporal consciente. Estas condiciones impactan directamente en la atención, la regulación emocional y el clima grupal dentro de las instituciones.</p>
+  <p>La propuesta ofrece espacios estructurados de pausa, presencia y experiencia corporal, que favorecen mejores condiciones para el aprendizaje, la convivencia y el bienestar general de la comunidad educativa.</p>
+  <p>Suri Yoga se integra a la dinámica institucional, respetando tiempos, encuadres y proyectos pedagógicos existentes.</p>
+</section>
 
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>
-        Podés escribirme a <a href
+<footer>
+  <p>© 2026 Suri Yoga · Del Viso – Pilar</p>
+</footer>
+
+</body>
+</html>
