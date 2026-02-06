@@ -4,13 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Programas | Suri Yoga</title>
-  <meta name="description" content="Programas de yoga y mindfulness para infancias y adolescencias en Pilar." />
-
-  <!-- Google Fonts -->
+  <meta name="description" content="Programas Suri Yoga para infancias y adolescencias." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
-
   <style>
     :root {
       --arena: #f8f5f0;
@@ -19,9 +16,12 @@
       --gris: #3f3f3f;
       --verde-oscuro: #2f3e46;
     }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -29,17 +29,17 @@
       color: var(--gris);
       line-height: 1.7;
     }
-
     nav {
       position: fixed;
-      top: 0; left: 0; width: 100%;
-      background-color: #faf7f2;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: var(--arena);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
       z-index: 1000;
       font-weight: 500;
       font-family: 'Inter', sans-serif;
     }
-
     nav div {
       max-width: 1000px;
       margin: auto;
@@ -48,224 +48,129 @@
       gap: 40px;
       padding: 15px 10px;
     }
-
     nav a {
       text-decoration: none;
       color: var(--verde-oscuro);
       font-size: 1rem;
-      padding: 4px 8px;
+      padding: 6px 10px;
       border-radius: 8px;
       transition: background-color 0.3s ease, color 0.3s ease;
     }
-
     nav a:hover,
     nav a:focus {
       background-color: var(--salvia);
       color: white;
       outline: none;
     }
-
-    header {
-      margin-top: 70px;
+    .spacer {
+      height: 65px;
+    }
+    header.logo {
       text-align: center;
-      padding: 40px 20px 20px;
-      background-color: var(--arena);
+      margin: 40px 0 40px;
     }
-
-    header img {
-      max-width: 160px;
+    header.logo img {
+      max-width: 220px;
+      width: 80%;
       height: auto;
-      margin-bottom: 12px;
+      display: inline-block;
     }
-
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 500;
-      color: var(--verde-oscuro);
-      font-size: 2rem;
-      margin: 0 0 10px;
-    }
-
-    header p {
-      font-family: 'Inter', sans-serif;
-      font-weight: 400;
-      font-size: 1.05rem;
-      color: var(--gris);
-      margin: 0 0 30px;
-      max-width: 480px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    main {
-      max-width: 1000px;
+    section {
+      max-width: 900px;
       margin: auto;
       padding: 0 20px 60px;
-      background-color: var(--arena);
-      color: var(--gris);
     }
-
     h2 {
       font-family: 'Playfair Display', serif;
-      font-weight: 500;
       color: var(--verde-oscuro);
+      font-weight: 500;
       font-size: 2rem;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       text-align: center;
     }
-
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
-
     .box {
       background-color: white;
-      padding: 25px 25px 30px;
+      padding: 30px;
       border-radius: 18px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.04);
       color: var(--gris);
-      transition: box-shadow 0.3s ease;
+      cursor: pointer;
+      transition: transform 0.2s ease;
     }
-
-    .box:hover,
-    .box:focus-within {
-      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    .box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 30px rgba(0,0,0,0.08);
     }
-
-    .box h3 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 500;
-      font-size: 1.3rem;
-      margin-top: 0;
-      margin-bottom: 15px;
-      color: var(--verde-oscuro);
-    }
-
-    .box p {
-      margin: 0;
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-
-    ul {
-      margin: 0 0 1.5em 20px;
-      color: var(--gris);
-      font-size: 1rem;
-    }
-
-    a.back-link {
-      display: inline-block;
-      margin-bottom: 30px;
-      color: var(--verde-oscuro);
+    a.box-link {
       text-decoration: none;
-      font-weight: 500;
-      font-family: 'Inter', sans-serif;
+      color: inherit;
+      display: block;
     }
-
-    a.back-link:hover {
-      color: var(--salvia);
-    }
-
     footer {
       text-align: center;
       padding: 30px 10px;
       font-size: 0.9rem;
       color: #666;
-      border-top: 1px solid #ddd;
       background-color: var(--arena);
-    }
-
-    @media (max-width: 500px) {
-      nav div {
-        gap: 20px;
-        padding: 12px 6px;
-      }
+      border-top: 1px solid #ddd;
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <div>
-      <a href="index.html#contexto">Contexto</a>
-      <a href="programas.html" aria-current="page">Programas</a>
-      <a href="index.html#quien-acompana">Quién acompaña</a>
-      <a href="index.html#contacto">Contacto</a>
-    </div>
-  </nav>
+<nav>
+  <div>
+    <a href="index.html">Contexto</a>
+    <a href="programas.html">Programas</a>
+    <a href="quien-acompana.html">Quién acompaña</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+</nav>
+<div class="spacer"></div>
 
-  <header>
-    <img src="img/logo-suri.png" alt="Suri Yoga" />
-    <h1>Programas</h1>
-    <p>Explorá nuestras propuestas para acompañar infancias y adolescencias desde el yoga y mindfulness.</p>
-  </header>
+<header class="logo">
+  <img src="img/logo-suri.png" alt="Suri Yoga Logo" />
+</header>
 
-  <main>
-
-    <section id="raiz">
-      <h2>Raíz · Infancias</h2>
-      <div class="grid">
-        <div class="box">
-          <h3><a href="raiz.html">Cali (3-5 años)</a></h3>
-          <p>Propuesta lúdica y sensorial para reconocimiento corporal y regulación temprana.</p>
-        </div>
-        <div class="box">
-          <h3><a href="raiz.html">Radi (6-8 años)</a></h3>
-          <p>Desarrollo de la atención y regulación emocional con herramientas simples.</p>
-        </div>
-        <div class="box">
-          <h3><a href="raiz.html">Brote (9-12 años)</a></h3>
-          <p>Conexión corporal profunda y consolidación de presencia.</p>
-        </div>
+<section>
+  <h2>Programas</h2>
+  <div class="grid">
+    <a href="raiz.html" class="box-link">
+      <div class="box">
+        <h3>Raíz · Infancias</h3>
+        <p>Programa para niños y niñas de 3 a 12 años dividido en Cali, Radi y Brote.</p>
       </div>
-    </section>
-
-    <section id="pausa">
-      <h2>Pausa · Adolescencias</h2>
-      <div class="grid">
-        <div class="box">
-          <h3><a href="pausa.html">Ritmo (13-15 años)</a></h3>
-          <p>Espacios de pausa y escucha sin exigencias de rendimiento.</p>
-        </div>
-        <div class="box">
-          <h3><a href="pausa.html">Pulso (16-18 años)</a></h3>
-          <p>Herramientas para gestión emocional y reducción de sobrecarga atencional.</p>
-        </div>
+    </a>
+    <a href="pausa.html" class="box-link">
+      <div class="box">
+        <h3>Pausa · Adolescencias</h3>
+        <p>Programa para adolescentes de 13 a 18 años dividido en Ritmo y Pulso.</p>
       </div>
-    </section>
-
-    <section id="trama">
-      <h2>Trama · Instituciones</h2>
-      <div class="grid">
-        <div class="box">
-          <h3><a href="trama.html">Nivel Inicial</a></h3>
-          <p>Propuestas lúdicas integradas a la primera infancia y rutinas escolares.</p>
-        </div>
-        <div class="box">
-          <h3><a href="trama.html">Nivel Primario</a></h3>
-          <p>Herramientas de pausa y regulación para contextos escolares primarios.</p>
-        </div>
-        <div class="box">
-          <h3><a href="trama.html">Nivel Secundario</a></h3>
-          <p>Dispositivos adaptados a las singularidades de las adolescencias.</p>
-        </div>
+    </a>
+    <a href="trama.html" class="box-link">
+      <div class="box">
+        <h3>Trama · Instituciones</h3>
+        <p>Programa para instituciones educativas con modalidades de talleres, programas periódicos y propuestas personalizadas.</p>
       </div>
-      <h3>Modalidades de implementación</h3>
-      <ul>
-        <li>Talleres puntuales</li>
-        <li>Programas periódicos</li>
-        <li>Propuestas personalizadas</li>
-      </ul>
-    </section>
+    </a>
+    <a href="semilla.html" class="box-link">
+      <div class="box">
+        <h3>Semilla · Baby Yoga</h3>
+        <p>Próximamente: un espacio de yoga para bebés y familias en construcción.</p>
+      </div>
+    </a>
+  </div>
+</section>
 
-  </main>
-
-  <footer>
-    <p>Suri Yoga · Del Viso – Pilar</p>
-  </footer>
+<footer>
+  <p>© 2026 Suri Yoga · Del Viso – Pilar</p>
+</footer>
 
 </body>
 </html>
