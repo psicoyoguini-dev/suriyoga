@@ -20,14 +20,8 @@
       --verde-oscuro: #2f3e46;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -36,12 +30,9 @@
       line-height: 1.7;
     }
 
-    /* ======= Menú fijo superior ======= */
     nav {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
+      top: 0; left: 0; width: 100%;
       background-color: #faf7f2;
       box-shadow: 0 2px 5px rgba(0,0,0,0.08);
       z-index: 1000;
@@ -74,9 +65,8 @@
       outline: none;
     }
 
-    /* ======= Header con imagen hero.jpg ======= */
     header {
-      margin-top: 70px; /* espacio para menú */
+      margin-top: 70px;
       position: relative;
       height: 320px;
       background-image: url('img/hero.jpg');
@@ -90,7 +80,6 @@
       color: white;
     }
 
-    /* Overlay para oscurecer fondo y mejorar legibilidad */
     header::before {
       content: "";
       position: absolute;
@@ -99,7 +88,6 @@
       z-index: 0;
     }
 
-    /* Logo y slogan arriba del overlay */
     .logo {
       max-width: 180px;
       width: 100%;
@@ -118,7 +106,6 @@
       text-shadow: 0 0 6px rgba(0,0,0,0.7);
     }
 
-    /* ======= Contenido principal ======= */
     main {
       max-width: 900px;
       margin: auto;
@@ -144,7 +131,15 @@
       margin-bottom: 60px;
     }
 
-    /* ======= Footer ======= */
+    /* Imagen en sección quien acompaña */
+    #quien-acompana img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 16px;
+      margin-top: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
     footer {
       text-align: center;
       padding: 30px 10px;
@@ -155,7 +150,6 @@
       background-color: var(--arena);
     }
 
-    /* Responsive */
     @media (max-width: 500px) {
       nav div {
         gap: 20px;
@@ -211,19 +205,10 @@
       <p>
         Suri Yoga nace en el cruce entre educación, cuerpo y mundo emocional, con una mirada realista y respetuosa de los encuadres institucionales.
       </p>
+      <img src="img/candela-franchi.jpg" alt="Candela María Franchi" />
     </section>
 
     <section id="contacto">
       <h2>Contacto</h2>
       <p>
-        Podés escribirme a <a href="mailto:contacto@suriyoga.com.ar">contacto@suriyoga.com.ar</a> o dejar tu mensaje en nuestras redes sociales.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>Suri Yoga · Del Viso – Pilar</p>
-  </footer>
-
-</body>
-</html>
+        Podés escribirme a <a href
