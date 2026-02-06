@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Suri Yoga | Habitar el cuerpo</title>
   <meta name="description" content="Yoga y mindfulness infantil y adolescente en Pilar." />
 
@@ -21,156 +20,38 @@
       --verde-oscuro: #2f3e46;
     }
 
-    * {
-      box-sizing: border-box;
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin:0; font-family:'Inter',sans-serif; background-color: var(--arena); color: var(--gris); line-height:1.7; }
+
+    header { padding:30px 20px 10px; text-align:center; }
+    .logo { width:260px; max-width:80%; height:auto; }
+
+    section { padding:70px 20px; max-width:1000px; margin:auto; }
+    h1,h2,h3 { font-family:'Playfair Display',serif; color: var(--verde-oscuro); font-weight:500; }
+    h2 { font-size:2rem; margin-bottom:20px; }
+    h3 { font-size:1.3rem; }
+    p { font-size:1.05rem; }
+
+    .hero { text-align:center; padding:110px 20px; background-image: linear-gradient(rgba(248,245,240,0.5), rgba(248,245,240,0.6)), url("img/hero.jpg"); background-size:cover; background-position:center; }
+    .hero p { max-width:680px; margin:auto; }
+    .claim { font-size:1.3rem; margin:20px 0; color: var(--verde-oscuro); }
+    .btn { display:inline-block; margin-top:30px; padding:14px 34px; background-color: var(--verde-oscuro); color:#fff; text-decoration:none; border-radius:40px; font-size:1rem; }
+
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:40px; }
+    .box { background-color:#fff; padding:30px; border-radius:18px; box-shadow:0 10px 25px rgba(0,0,0,0.04); }
+    .highlight { background-color: var(--salvia); color:#fff; padding:60px 30px; border-radius:20px; text-align:center; }
+    .highlight h2 { color:#fff; }
+
+    footer { text-align:center; padding:40px 20px; font-size:0.9rem; color:#666; }
+
+    .about { padding:80px 20px; }
+    .about-grid { display:grid; grid-template-columns:1fr 1.2fr; gap:50px; align-items:center; max-width:1000px; margin:auto; }
+    .about-photo img { width:100%; border-radius:20px; box-shadow:0 15px 35px rgba(0,0,0,0.08); }
+    @media (max-width:768px) {
+      .about-grid { grid-template-columns:1fr; text-align:center; }
+      .about-photo img { max-width:280px; margin:auto; }
     }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: var(--arena);
-      color: var(--gris);
-      line-height: 1.7;
-    }
-
-    header {
-      padding: 30px 20px 10px;
-      text-align: center;
-    }
-
-    .logo {
-      width: 260px;
-      max-width: 80%;
-      height: auto;
-    }
-
-    section {
-      padding: 70px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-      color: var(--verde-oscuro);
-      font-weight: 500;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    h3 {
-      font-size: 1.3rem;
-    }
-
-    p {
-      font-size: 1.05rem;
-    }
-
-    /* HERO */
-    .hero {
-      text-align: center;
-      padding: 110px 20px;
-      background-image:
-        linear-gradient(
-          rgba(248, 245, 240, 0.5),
-          rgba(248, 245, 240, 0.6)
-        ),
-        url("img/hero.jpg");
-      background-size: cover;
-      background-position: center;
-    }
-
-    .hero p {
-      max-width: 680px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .claim {
-      font-size: 1.3rem;
-      margin: 20px 0;
-      color: var(--verde-oscuro);
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 14px 34px;
-      background-color: var(--verde-oscuro);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 40px;
-      font-size: 1rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 40px;
-    }
-
-    .box {
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 18px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.04);
-    }
-
-    .highlight {
-      background-color: var(--salvia);
-      color: #fff;
-      padding: 60px 30px;
-      border-radius: 20px;
-      text-align: center;
-    }
-
-    .highlight h2 {
-      color: #fff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    .about {
-  padding: 80px 20px;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 50px;
-  align-items: center;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.about-photo img {
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-}
-
-@media (max-width: 768px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .about-photo img {
-    max-width: 280px;
-    margin: auto;
-  }
-}
   </style>
 </head>
 
@@ -180,86 +61,62 @@
     <img src="img/logo-suri.png" alt="Suri Yoga" class="logo">
   </div>
 </header>
+
 <section class="hero">
   <p class="claim"><strong>Habitar el cuerpo. Enseñar presencia.</strong></p>
-  <p>
-    Yoga y mindfulness para infancias y adolescencias.<br>
-    Espacios de calma para habitar el cuerpo y aprender a estar en presencia.
-  </p>
+  <p>Yoga y mindfulness para infancias y adolescencias.<br>Espacios de calma para habitar el cuerpo y aprender a estar en presencia.</p>
   <a href="#contacto" class="btn">Quiero más información</a>
 </section>
+
 <section>
-  <h2>El contexto actual</h2>
-  <p>Niños y adolescentes viven hoy en un entorno de hiperestimulación constante.</p>
-  <p>Cuando el cuerpo no tiene lugar, la atención se fragmenta.</p>
-</section>
-<section>
-  <h2>¿Qué es Suri Yoga?</h2>
-  <div class="grid">
-    <div class="box">
-      <h3>Cuerpo</h3>
-      <p>Movimiento consciente y registro corporal.</p>
-    </div>
-    <div class="box">
-      <h3>Emoción</h3>
-      <p>Espacios donde las emociones pueden transitarse.</p>
-    </div>
-    <div class="box">
-      <h3>Presencia</h3>
-      <p>Atención plena adaptada a cada edad.</p>
-    </div>
-  </div>
-</section>
-  <section>
   <h2>Programas</h2>
   <div class="grid">
+    <!-- RAÍZ -->
     <div class="box">
       <h3>Raíz · Infancias</h3>
-      <p>
-        Talleres semanales de yoga y mindfulness infantil orientados a
-        desarrollar conciencia corporal, atención y regulación emocional
-        desde el juego y la experiencia.
-      </p>
-      <p><em>Grupos reducidos · Sin pantallas</em></p>
+      <p>Talleres semanales de yoga y mindfulness para niños.</p>
+      <ul>
+        <li><strong>Cali:</strong> 3–5 años</li>
+        <li><strong>Radi:</strong> 6–8 años</li>
+        <li><strong>Brote:</strong> 9–12 años</li>
+      </ul>
+      <a href="raiz.html" class="btn">Ver más</a>
     </div>
 
+    <!-- PAUSA -->
     <div class="box">
       <h3>Pausa · Adolescencias</h3>
-      <p>
-        Un espacio corporal y mental para bajar la intensidad,
-        recuperar el foco y habitar el cuerpo en una etapa de alta exigencia.
-      </p>
-      <p><em>No es terapia. No es clase. Es una pausa.</em></p>
+      <p>Espacio corporal y mental para adolescentes.</p>
+      <ul>
+        <li><strong>Ritmo:</strong> 13–15 años</li>
+        <li><strong>Pulso:</strong> 16–18 años</li>
+      </ul>
+      <a href="pausa.html" class="btn">Ver más</a>
     </div>
 
+    <!-- TRAMA -->
     <div class="box">
-      <h3>Presencia · Instituciones</h3>
-      <p>
-        Programas de regulación corporal y emocional para escuelas
-        y espacios educativos, adaptados a cada contexto institucional.
-      </p>
+      <h3>Trama · Instituciones</h3>
+      <p>Programas adaptados según edad y modalidad:</p>
+      <ul>
+        <li><strong>Nivel educativo:</strong> Inicial / Primario / Secundario</li>
+        <li><strong>Modalidad:</strong> Talleres puntuales / Programas periódicos / Propuestas personalizadas</li>
+      </ul>
+      <a href="trama.html" class="btn">Ver más</a>
     </div>
   </div>
 </section>
-  <section class="about">
+
+<section class="about">
   <div class="about-grid">
     <div class="about-photo">
       <img src="img/candela.jpg" alt="Candela – Suri Yoga">
     </div>
-
     <div class="about-text">
       <h2>Quién acompaña</h2>
-      <p>
-        Soy Candela, psicóloga, docente y maestra de yoga y mindfulness infantil.
-      </p>
-      <p>
-        Durante más de 15 años trabajé como docente de tecnología,
-        acompañando a niños y adolescentes en entornos digitales.
-      </p>
-      <p>
-        Desde esa experiencia nace Suri Yoga: un espacio a favor del equilibrio,
-        la presencia y el cuerpo, en un tiempo de sobreestimulación constante.
-      </p>
+      <p>Soy Candela, psicóloga, docente y maestra de yoga y mindfulness infantil.</p>
+      <p>Durante más de 15 años trabajé como docente de tecnología, acompañando a niños y adolescentes en entornos digitales.</p>
+      <p>Desde esa experiencia nace Suri Yoga: un espacio a favor del equilibrio, la presencia y el cuerpo, en un tiempo de sobreestimulación constante.</p>
     </div>
   </div>
 </section>
@@ -272,14 +129,5 @@
 <footer>
   <p>Suri Yoga · Del Viso – Pilar</p>
 </footer>
-
 </body>
 </html>
-
-
-
-
-
-
-
-
