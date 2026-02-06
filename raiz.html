@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Suri Yoga | Raíz · Infancias</title>
+  <title>Suri Yoga | Trama Instituciones</title>
+  <meta name="description" content="Suri Yoga – Programa institucional de regulación emocional y atención plena para infancias y adolescencias." />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,10 +15,90 @@
     :root {
       --arena: #f8f5f0;
       --salvia: #9caf88;
+      --arcilla: #cfa58d;
       --gris: #3f3f3f;
       --verde-oscuro: #2f3e46;
     }
-    * { box-sizing:border-box; }
-    html { scroll-behavior:smooth; }
-    body { margin:0; font-family:'Inter',sans-serif; background-color: var(--arena); color: var(--gris); line-height:1.7; }
-    header { padding
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: 'Inter', sans-serif; background-color: var(--arena); color: var(--gris); line-height: 1.7; }
+    header { padding: 30px 20px 10px; text-align: center; }
+    .logo { width: 260px; max-width: 80%; height: auto; }
+    section { padding: 70px 20px; max-width: 1000px; margin: auto; }
+    h1,h2,h3 { font-family: 'Playfair Display', serif; color: var(--verde-oscuro); font-weight: 500; }
+    h2 { font-size: 2rem; margin-bottom: 20px; }
+    h3 { font-size: 1.3rem; }
+    p { font-size: 1.05rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 40px; }
+    .box { background-color: #ffffff; padding: 30px; border-radius: 18px; box-shadow: 0 10px 25px rgba(0,0,0,0.04); cursor: pointer; transition: transform 0.2s; }
+    .box:hover { transform: translateY(-5px); }
+    .highlight { background-color: var(--salvia); color: #fff; padding: 60px 30px; border-radius: 20px; text-align: center; }
+    .highlight h2 { color: #fff; }
+    footer { text-align: center; padding: 40px 20px; font-size: 0.9rem; color: #666; }
+    .program-detail { background-color: #fff; padding: 50px 30px; border-radius: 20px; margin-top: 50px; box-shadow: 0 10px 25px rgba(0,0,0,0.04); }
+    .subgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; margin-top: 30px; }
+    @media (max-width: 768px) { .subgrid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="img/logo-suri.png" alt="Suri Yoga" class="logo">
+</header>
+
+<section>
+  <h2>Trama · Instituciones</h2>
+  <div class="grid">
+    <div class="box"><h3>Nivel Inicial</h3><p>Modalidades: Talleres puntuales · Programas periódicos · Propuestas personalizadas</p><a href="#inicial"></a></div>
+    <div class="box"><h3>Nivel Primario</h3><p>Modalidades: Talleres puntuales · Programas periódicos · Propuestas personalizadas</p><a href="#primario"></a></div>
+    <div class="box"><h3>Nivel Secundario</h3><p>Modalidades: Talleres puntuales · Programas periódicos · Propuestas personalizadas</p><a href="#secundario"></a></div>
+  </div>
+</section>
+
+<!-- Detalles por nivel -->
+<section id="inicial" class="program-detail">
+  <h2>Nivel Inicial</h2>
+  <p>Propuestas lúdicas y sensoriales que favorecen el reconocimiento del cuerpo, la regulación emocional temprana y la atención a través del juego y la experiencia. Se integran al ritmo natural del grupo, respetando los tiempos propios de la primera infancia.</p>
+  <h3>Modalidades</h3>
+  <div class="subgrid">
+    <div class="box"><strong>Talleres puntuales</strong><br>COMPLETAR</div>
+    <div class="box"><strong>Programas periódicos</strong><br>COMPLETAR</div>
+    <div class="box"><strong>Propuestas personalizadas</strong><br>COMPLETAR</div>
+  </div>
+</section>
+
+<section id="primario" class="program-detail">
+  <h2>Nivel Primario</h2>
+  <p>Espacios que acompañan el desarrollo de la atención sostenida, el registro emocional, la convivencia y la relación cuerpo–aprendizaje. Herramientas simples de respiración y pausa transferibles al aula.</p>
+  <h3>Modalidades</h3>
+  <div class="subgrid">
+    <div class="box"><strong>Talleres puntuales</strong><br>COMPLETAR</div>
+    <div class="box"><strong>Programas periódicos</strong><br>COMPLETAR</div>
+    <div class="box"><strong>Propuestas personalizadas</strong><br>COMPLETAR</div>
+  </div>
+</section>
+
+<section id="secundario" class="program-detail">
+  <h2>Nivel Secundario</h2>
+  <p>Dispositivos acordes a las adolescencias que favorecen el registro corporal, gestión emocional, reducción de sobrecarga atencional y espacios de pausa sin exigencia de rendimiento.</p>
+  <h3>Modalidades</h3>
+  <div class="subgrid">
+    <div class="box"><strong>Talleres puntuales</strong><br>COMPLETAR</div>
+    <div class="box"><strong>Programas periódicos</strong><br>COMPLETAR</div>
+    <div class="box"><strong>Propuestas personalizadas</strong><br>COMPLETAR</div>
+  </div>
+</section>
+
+<section class="highlight" id="contacto">
+  <h2>Contacto</h2>
+  <p>Para coordinar o recibir más información sobre Trama Instituciones:</p>
+  <a href="mailto:contacto@suriyoga.com.ar" class="btn">Escribime por mail</a>
+</section>
+
+<footer>
+  <p>Suri Yoga · Del Viso – Pilar</p>
+</footer>
+
+</body>
+</html>
