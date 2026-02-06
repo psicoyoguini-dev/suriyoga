@@ -2,46 +2,142 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pausa · Adolescencias | Suri Yoga</title>
-  <link rel="stylesheet" href="style.css">
-  <style>.spacer { height:80px; }</style>
+  <meta name="description" content="Programa Pausa para adolescentes de 13 a 18 años." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --arena: #f8f5f0;
+      --salvia: #9caf88;
+      --gris: #3f3f3f;
+      --verde-oscuro: #2f3e46;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--arena);
+      color: var(--gris);
+      line-height: 1.7;
+    }
+
+    /* ===== MENU FIJO ===== */
+    nav {
+      position: fixed;
+      top:0; left:0; width:100%;
+      background-color: var(--arena);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      z-index: 1000;
+      font-weight: 500;
+      font-family: 'Inter',sans-serif;
+    }
+    nav div {
+      max-width:1000px;
+      margin:auto;
+      display:flex;
+      justify-content:center;
+      gap:40px;
+      padding:15px 10px;
+    }
+    nav a {
+      text-decoration:none;
+      color:var(--verde-oscuro);
+      font-size:1rem;
+      padding:6px 10px;
+      border-radius:8px;
+      transition:background-color 0.3s ease, color 0.3s ease;
+    }
+    nav a:hover,
+    nav a:focus {
+      background-color:var(--salvia);
+      color:white;
+      outline:none;
+    }
+    .spacer { height:65px; }
+
+    header.logo {
+      text-align:center;
+      margin:40px 0 40px;
+    }
+    header.logo img {
+      max-width:220px;
+      width:80%;
+      height:auto;
+      display:inline-block;
+    }
+
+    section {
+      max-width:900px;
+      margin:auto;
+      padding:0 20px 60px;
+    }
+    h2 {
+      font-family:'Playfair Display', serif;
+      color:var(--verde-oscuro);
+      font-size:2rem;
+      margin-bottom:30px;
+      text-align:center;
+    }
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+      gap:30px;
+      margin-bottom:50px;
+    }
+    .box {
+      background-color:white;
+      padding:30px;
+      border-radius:18px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.04);
+      color:var(--gris);
+    }
+
+    footer {
+      text-align:center;
+      padding:30px 10px;
+      font-size:0.9rem;
+      color:#666;
+      background-color:var(--arena);
+      border-top:1px solid #ddd;
+    }
+  </style>
 </head>
 <body>
 
 <nav>
   <div>
-    <a href="index.html">Inicio</a>
-    <a href="raiz.html">Raíz</a>
-    <a href="pausa.html">Pausa</a>
-    <a href="trama.html">Trama</a>
-    <a href="semilla.html">Semilla</a>
+    <a href="index.html">Contexto</a>
+    <a href="programas.html">Programas</a>
+    <a href="quien-acompana.html">Quién acompaña</a>
+    <a href="contacto.html">Contacto</a>
   </div>
 </nav>
 <div class="spacer"></div>
 
-<header>
-  <img src="img/logo-suri.png" alt="Suri Yoga" class="logo">
+<header class="logo">
+  <img src="img/logo-suri.png" alt="Suri Yoga Logo" />
 </header>
 
 <section>
   <h2>Pausa · Adolescencias</h2>
-  <p>Dispositivos acordes a la adolescencia que favorecen registro corporal, gestión emocional y espacios de escucha sin exigencia de rendimiento.</p>
-
   <div class="grid">
     <div class="box">
-      <h3>Ritmo (13-15 años)</h3>
+      <h3>Ritmo (13–15 años)</h3>
       <p>COMPLETAR VALORES</p>
     </div>
     <div class="box">
-      <h3>Pulso (16-18 años)</h3>
+      <h3>Pulso (16–18 años)</h3>
       <p>COMPLETAR VALORES</p>
     </div>
   </div>
 </section>
 
 <footer>
-  <p><a href="index.html">← Volver al inicio</a></p>
+  <p>© 2026 Suri Yoga · Del Viso – Pilar</p>
 </footer>
 
 </body>
