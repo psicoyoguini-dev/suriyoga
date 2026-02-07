@@ -2,165 +2,243 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Suri Yoga | Habitar el cuerpo</title>
-  <meta name="description" content="Yoga y mindfulness infantil y adolescente en Pilar. Espacio sin pantallas." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --arena: #f8f5f0;
-      --salvia: #9caf88;
-      --arcilla: #cfa58d;
-      --gris: #3f3f3f;
-      --verde-oscuro: #2f3e46;
-    }
-    * {
-      box-sizing: border-box;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: var(--arena);
-      color: var(--gris);
-      line-height: 1.7;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: var(--arena);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-      z-index: 1000;
-      font-weight: 500;
-      font-family: 'Inter', sans-serif;
-    }
-    nav div {
-      max-width: 1000px;
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      padding: 15px 10px;
-    }
-    nav a {
-      text-decoration: none;
-      color: var(--verde-oscuro);
-      font-size: 1rem;
-      padding: 6px 10px;
-      border-radius: 8px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    nav a:hover,
-    nav a:focus {
-      background-color: var(--salvia);
-      color: white;
-      outline: none;
-    }
-    .spacer {
-      height: 65px; /* Altura nav para compensar */
-    }
-    header.hero {
-      width: 100%;
-      max-height: 360px;
-      overflow: hidden;
-    }
-    header.hero img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;
-      max-height: 360px;
-    }
-    header.logo {
-      text-align: center;
-      margin: 40px 0 40px;
-    }
-    header.logo img {
-      max-width: 220px;
-      width: 80%;
-      height: auto;
-      display: inline-block;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 0 20px 60px;
-    }
-    h2 {
-      font-family: 'Playfair Display', serif;
-      color: var(--verde-oscuro);
-      font-weight: 500;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1.05rem;
-      margin-bottom: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 10px;
-      font-size: 0.9rem;
-      color: #666;
-      background-color: var(--arena);
-      border-top: 1px solid #ddd;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suri Yoga | Habitar el cuerpo. Enseñar presencia.</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-<nav>
-  <div>
-    <a href="index.html">Inicio</a>
-    <a href="raiz.html">Raíz</a>
-    <a href="pausa.html">Pausa</a>
-    <a href="trama.html">Trama</a>
-    <a href="semilla.html">Semilla</a>
-  </div>
-</nav>
-<div class="spacer"></div>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#intencion">Intención</a></li>
+        <li><a href="#programas">Programas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header class="hero">
-  <img src="img/hero.jpg" alt="Suri Yoga - Habitar el cuerpo y acompañar emociones" />
-</header>
+  <!-- HERO -->
+  <section class="hero">
+    <img src="img/hero.jpg" alt="Suri Yoga Hero" />
+    <img src="img/logo-suri.png" alt="Logo Suri Yoga" class="logo" />
+  </section>
 
-<header class="logo">
-  <img src="img/logo-suri.png" alt="Suri Yoga Logo" />
-</header>
+  <!-- INICIO -->
+  <section id="inicio" class="section">
+    <h1>Suri Yoga <span class="dot">•</span> Habitar el cuerpo. Enseñar presencia.</h1>
+    <h2>Yoga y mindfulness para infancias y adolescencias</h2>
 
-<section>
-  <h2>Contexto actual</h2>
-  <p>Suri Yoga es un programa de yoga y mindfulness orientado a infancias y adolescencias, diseñado para acompañar procesos de autorregulación emocional, corporal y atencional en contextos educativos.</p>
-  <p>Vivimos en entornos de alta estimulación y fuerte presencia de pantallas, con escasos espacios de pausa corporal consciente. Estas condiciones impactan directamente en la atención, la regulación emocional y el clima grupal dentro de las instituciones.</p>
-  <p>La propuesta ofrece espacios estructurados de pausa, presencia y experiencia corporal, que favorecen mejores condiciones para el aprendizaje, la convivencia y el bienestar general de la comunidad educativa.</p>
-  <p>Suri Yoga se integra a la dinámica institucional, respetando tiempos, encuadres y proyectos pedagógicos existentes.</p>
-</section>
-<section id="programas">
-  <h2>Programas</h2>
-  <p>Explorá los programas Raíz, Pausa, Trama y Semilla.</p>
-</section>
+    <p>
+      Suri Yoga nace para crear espacios cuidados para la infancia y la adolescencia.
+      Un shala donde el cuerpo puede moverse, jugar y expresarse, y donde las emociones
+      encuentran lenguaje.
+    </p>
 
-<section id="acompanha">
-  <h2>Quién acompaña</h2>
-  <p>Soy Candela, psicóloga, docente y maestra de yoga y mindfulness infantil.</p>
-</section>
+    <p>
+      Desde el yoga y el mindfulness, con mirada psicológica, acompañamos a niños,
+      niñas y adolescentes, a desarrollar atención, calma y vínculo consigo mismos.
+    </p>
 
-<section id="contacto">
-  <h2>Contacto</h2>
-  <p>Escribime y coordinamos.</p>
-</section>
+    <p class="highlight">
+      Porque un niño que se escucha hoy, es un adulto más libre mañana.
+    </p>
 
-<footer>
-  <p>© 2026 Suri Yoga · Del Viso – Pilar</p>
-</footer>
+    <p class="closing">
+      Suri es sol, es consciencia, es energía vital ☀ <br />
+      Conocenos, conocete.
+    </p>
+  </section>
+
+  <!-- INTENCIÓN -->
+  <section id="intencion" class="section alt">
+    <h1>Suri Yoga <span class="dot">•</span> Habitar el cuerpo. Enseñar presencia.</h1>
+    <h2>Yoga y mindfulness para infancias y adolescencias</h2>
+
+    <p>
+      Los niños y adolescentes hoy están creciendo en un entorno hiperestimulado e
+      hiperconectados. No por falta de límites, sino por exceso de estímulos: pantallas,
+      notificaciones, exigencias y poco espacio para la pausa, que impactan en la
+      autorregulación emocional, los procesos atencionales y el descanso.
+    </p>
+
+    <p>
+      Cuando el cuerpo y la presencia consciente no tienen lugar, la atención se
+      fragmenta y las emociones desbordan. Suri Yoga propone crear espacios donde el
+      cuerpo vuelva a ser habitado.
+    </p>
+
+    <p>
+      No se trata de prohibir pantallas, sino de ofrecer experiencias donde el cuerpo
+      vuelva a ser referencia. En Suri Yoga los niños encuentran un tiempo sin
+      dispositivos, donde pueden moverse, respirar, jugar y aprender a escucharse.
+    </p>
+  </section>
+
+  <!-- PROGRAMAS -->
+  <section id="programas" class="section">
+    <h1>Suri Yoga <span class="dot">•</span> Habitar el cuerpo. Enseñar presencia.</h1>
+    <h2>Propuestas de Yoga y Mindfulness adecuadas a cada momento del desarrollo</h2>
+
+    <!-- SEMILLA -->
+    <div class="program">
+      <h3>Semilla <span class="dot">•</span> Baby Yoga</h3>
+      <p>
+        Estamos cultivando con cuidado la primera germinación de nuestra semilla, un
+        espacio todavía en construcción, de encuentro para bebés y sus cuidadores.
+        Momentos de compañía y construcción de un vínculo marcado por la calma y la
+        presencia plena.
+      </p>
+
+      <div class="boxes">
+        <div class="box">Árbol <br /><span>COMPLETAR INFO</span></div>
+        <div class="box">Aire <br /><span>COMPLETAR INFO</span></div>
+      </div>
+
+      <p class="cta">
+        Déjanos tu contacto y te avisaremos cuando la primera semilla empiece a germinar 🌱✨
+      </p>
+      <a class="button" href="mailto:contacto@suriyoga.com.ar">Contactar</a>
+    </div>
+
+    <!-- RAÍZ -->
+    <div class="program alt">
+      <h3>Raíz <span class="dot">•</span> Infancias</h3>
+      <p>
+        Yoga y Mindfulness infantil <span class="dot">•</span> Habitar el cuerpo desde el juego.
+      </p>
+
+      <p>
+        Talleres semanales de yoga y mindfulness infantil, para regular emociones y
+        habitar el cuerpo. Suri Yoga es un espacio cuidado para que niños y niñas
+        desarrollen consciencia corporal, regulación emocional y atención plena.
+      </p>
+
+      <div class="boxes">
+        <div class="box">Cali (3–5 años)<br />$75.000</div>
+        <div class="box">Radi (6–8 años)<br />$75.000</div>
+        <div class="box">Brote (9–12 años)<br />$75.000</div>
+      </div>
+
+      <p class="cta">
+        Si sentís que este espacio puede acompañar a tu hijo/a, avisame y reservamos lugar 🌱
+        <br />Consulta horarios y disponibilidad de cupos
+      </p>
+      <a class="button" href="mailto:contacto@suriyoga.com.ar">Contactar</a>
+    </div>
+
+    <!-- PAUSA -->
+    <div class="program">
+      <h3>Pausa</h3>
+      <p>
+        Yoga y Mindfulness infantil <span class="dot">•</span>
+        Habitar el cuerpo, conectar con la respiración y el valor de la presencia.
+      </p>
+
+      <p>
+        Cuando todo acelera, habitar el cuerpo y conectar con la pausa, es resistencia.
+        Espacios semanales para adolescentes, una pausa para bajar la intensidad,
+        respirar, recuperar el foco y escuchar el cuerpo.
+      </p>
+
+      <div class="boxes">
+        <div class="box">Ritmo (13–15 años)<br />$70.000</div>
+        <div class="box">Pulso (16–18 años)<br />$70.000</div>
+      </div>
+
+      <p class="cta">
+        Consulta horarios y disponibilidad de cupos
+      </p>
+      <a class="button" href="mailto:contacto@suriyoga.com.ar">Contactar</a>
+    </div>
+
+    <!-- TRAMA -->
+    <div class="program alt">
+      <h3>Trama</h3>
+      <p>
+        Programas de regulación corporal y emocional en contextos educativos.
+        Enseñar pausa y presencia, también es educar.
+      </p>
+
+      <div class="boxes">
+        <div class="box">
+          <strong>Nivel Inicial</strong><br />
+          Reconocimiento del cuerpo<br />
+          Regulación emocional temprana<br />
+          Atención a través del juego<br />
+          Rutinas de pausa y calma
+        </div>
+
+        <div class="box">
+          <strong>Nivel Primario</strong><br />
+          Atención sostenida<br />
+          Registro emocional<br />
+          Convivencia grupal<br />
+          Cuerpo y aprendizaje
+        </div>
+
+        <div class="box">
+          <strong>Nivel Secundario</strong><br />
+          Registro corporal<br />
+          Gestión emocional<br />
+          Reducción de sobrecarga<br />
+          Pausa y presencia real
+        </div>
+      </div>
+
+      <h4>Modalidades de implementación</h4>
+
+      <div class="boxes">
+        <div class="box">Talleres<br />Jornadas institucionales y semanas especiales</div>
+        <div class="box">Programas periódicos<br />Encuentros semanales o quincenales</div>
+        <div class="box">Propuestas personalizadas<br />Diseñadas junto a la institución</div>
+      </div>
+
+      <p class="cta">
+        Contribuí con el bienestar de tu comunidad, no dudes en contactarnos
+      </p>
+      <a class="button" href="mailto:contacto@suriyoga.com.ar">Contactar</a>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section alt contact">
+    <div class="contact-content">
+      <img src="img/candela.jpg" alt="Candela" />
+
+      <div>
+        <h3>Quién acompaña</h3>
+        <p>
+          Soy Candela, psicóloga y docente. Hace más de 15 años acompaño a niños y
+          adolescentes en sus procesos emocionales. En Suri Yoga integro mi formación
+          clínica con el yoga y el mindfulness infantil, creando un espacio donde el
+          cuerpo pueda expresarse y la mente re-encontrarse con la calma interior.
+        </p>
+
+        <p>
+          Después de tantos años enseñando tecnología, comprendí que el mayor
+          aprendizaje hoy es volver al cuerpo.
+        </p>
+
+        <p>
+          Cuando el cuerpo tiene lugar, la atención vuelve a aparecer. Cuando hay
+          presencia real, el reencuentro con la calma interior se vuelve posible.
+        </p>
+
+        <div class="contact-buttons">
+          <a class="button" href="https://wa.me/5491155131360" target="_blank">WhatsApp</a>
+          <a class="button" href="mailto:contacto@suriyoga.com.ar">Mail</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer">
+      Suri Yoga <span class="dot">•</span> Habitar el cuerpo. Enseñar presencia.
+    </p>
+  </section>
 
 </body>
 </html>
-
-
